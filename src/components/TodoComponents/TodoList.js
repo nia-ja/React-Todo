@@ -1,18 +1,11 @@
 import React from 'react';
-
-function ListItem(props) {
-    return (
-        <li></li>
-    )
-}
+import Todo from './Todo';
 
 function TodoList(props) {
     return (
-        <div className="todo-list">
-            <ul>
-                <ListItem />
-            </ul>
-        </div>
+        <ul className="todo-list">
+            <Todo />
+        </ul>
     )
 }
 

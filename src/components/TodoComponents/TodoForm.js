@@ -8,7 +8,7 @@ export class TodoForm extends React.Component {
     onSubmit = (e) => {
         e.preventDefault();
         this.props.addTodo(this.state.task);
-        this.setState({task: ''})
+        this.setState({task: ''});
     }
 
     onChange = (e) => this.setState({[e.target.name]: e.target.value});

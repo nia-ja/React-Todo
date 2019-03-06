@@ -1,0 +1,17 @@
+/* Todo item styling*/
+.todo-item {
+    display: flex;
+    align-items: baseline;
+    margin: 10px 5%;
+}
+
+.todo-item .checkbox {
+    margin-right: 10px;
+}
+
+.todo-item p {
+    font-size: 1.8rem;
+}
+.todo-item p::first-letter {
+    text-transform: capitalize;
+}

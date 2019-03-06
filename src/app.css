@@ -84,10 +84,12 @@ form {
     padding: 20px 5%;
     margin-bottom: 20px;
     background: rgba(42, 34, 20, .8);
+    display: flex;
+    justify-content: space-between;
 }
 
 form input {
-    width: 50%;
+    width: 80%;
     font-size: 1.6rem;
     margin-right: 15px;
     padding: 10px;
@@ -97,8 +99,15 @@ form input {
 
 form .btn {
     font-size: 1.6rem;
+    font-weight: bold;
     color: rgb(42, 34, 20);
     padding: 10px;
-    border: none;
-    border-radius: 7px;   
+    background: rgba(249, 222, 211, .9);
+    border: 1px solid rgb(42, 34, 20);
+    border-radius: 7px;
+    cursor: pointer;
+}
+form .btn:focus {
+    box-shadow: 0 1px 1px 0 #C7C7C7 inset;
+	background: none repeat scroll 0 0 #E9E9E9;
 }

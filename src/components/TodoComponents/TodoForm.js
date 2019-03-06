@@ -7,11 +7,16 @@ export class TodoForm extends React.Component {
 
     onSubmit = (e) => {
         e.preventDefault();
-        this.props.addTodo(this.state.task);
+        // check if it is user input present
+        if(this.state.task !== "") {
+            this.props.addTodo(this.state.task);
+        }
         this.setState({task: ''});
     }
 
-    onChange = (e) => this.setState({[e.target.name]: e.target.value});
+    onChange = (e) => this.setState(
+        {[e.target.name]: e.target.value}
+    );
     
     render() {
         return (

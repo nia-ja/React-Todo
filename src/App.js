@@ -1,34 +1,32 @@
 import React from 'react';
 import TodoList from './components/TodoComponents/TodoList';
 import TodoForm from './components/TodoComponents/TodoForm';
+import "./app.css";
 
-const tasks = [
-  {
-    task: 'Brush teeth',
-    id: '756897',
-    completed: false
-  }
-];
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      task: '',
-      id: '',
-      completed: false
+      tasks: []
     };
   }
+  
+  addTodo = (task) => {
+    const newTask = {
+      id: Date.now(),
+      task: task,
+      completed: false
+    }
+    this.setState({tasks: [...this.state.tasks, newTask]});
+  }
 
-  // you will need a place to store your state in this component.
-  // design `App` to be the parent component of your application.
-  // this component is going to take care of state, and any change handlers you need to work with your state
   render() {
-    return (
+      return (
       <div className='container'>
         <h1>Todo App</h1>
-        <TodoList />
-        <TodoForm />
+        <TodoForm addTodo={this.addTodo} />
+        <TodoList tasks={this.state.tasks} />
     </div>
     );
   }

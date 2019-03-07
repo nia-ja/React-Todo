@@ -1,5 +1,7 @@
 import React from 'react';
 import "./Todo.css";
+import moment from 'moment';
+
 export class Todo extends React.Component {
     getStyle = () => {
         return {
@@ -11,11 +13,14 @@ export class Todo extends React.Component {
     }
     
     render() {
-        const { id, task } = this.props.task;
+        const { id, task} = this.props.task;
+        const currentTime = moment(id).startOf('minute').fromNow();
+
         return (
             <div style={this.getStyle()} className="todo-item">
                 <input type='checkbox' onChange={this.props.markComplete.bind(this, id)} />
                 <p>{task}</p>
+                <p className="todo-item-date">Added: {currentTime}</p>
             </div>
         )
     }

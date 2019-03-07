@@ -27,3 +27,8 @@
 .todo-item p:first-letter {
     text-transform: capitalize;
 }
+.todo-item .todo-item-date {
+    font-size: 1.2rem;
+    margin-left: auto;
+    font-style: italic;
+}

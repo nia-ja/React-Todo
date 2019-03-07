@@ -73,14 +73,14 @@ h1 {
 
 .container {
     max-width: 650px;
-    min-height: 90vh;
+    min-height: 100vh;
     height: 100%;
-    margin: 5vh auto;
+    margin: 0 auto;
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
     color: #2D4571;
     background: rgba(248, 219, 167, .8);
-    border-radius: 50px;
+    /* border-radius: 50px; */
     background-image:
     radial-gradient(
       #689A94,
@@ -106,6 +106,9 @@ form input {
     padding: 10px;
     border: none;
     border-radius: 7px;
+}
+form input:focus {
+    outline: none;
 }
 
 form .btn {

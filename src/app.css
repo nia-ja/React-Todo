@@ -58,24 +58,34 @@ html {
 }
 
 body {
-    background: rgba(249, 222, 211, .5);
+    background: #689A94;
 }
 
 h1 {
-    font-size: 4rem;
+    font-family: 'Monoton', cursive;
+    font-size: 6.5rem;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    padding: 20px 0;
+    word-spacing: 0.4em;
+    padding: 40px 0;
 }
 
 .container {
     max-width: 650px;
-    height: 100vh;
-    margin: 0 auto;
+    min-height: 90vh;
+    height: 100%;
+    margin: 5vh auto;
     font-size: 1.6rem;
-    color: rgb(42, 34, 20);
-    background: rgba(216, 204, 52, 0.8);
+    font-family: 'Roboto', sans-serif;
+    color: #2D4571;
+    background: rgba(248, 219, 167, .8);
+    border-radius: 50px;
+    background-image:
+    radial-gradient(
+      #689A94,
+      rgba(248, 219, 167, .8)
+    );
 }
 
 /* Form styling */
@@ -83,31 +93,45 @@ form {
     width: 100%;
     padding: 20px 5%;
     margin-bottom: 20px;
-    background: rgba(42, 34, 20, .8);
+    background: rgba(170, 130, 57, .4);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 form input {
-    width: 80%;
+    width: 50%;
     font-size: 1.6rem;
-    margin-right: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 2%;
     padding: 10px;
     border: none;
     border-radius: 7px;
 }
 
 form .btn {
+    width: 20%;
     font-size: 1.6rem;
     font-weight: bold;
-    color: rgb(42, 34, 20);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px #003933, 0 0 25px #41827B, 0 0 5px #236A62;
     padding: 10px;
-    background: rgba(249, 222, 211, .9);
-    border: 1px solid rgb(42, 34, 20);
+    background: #41827B;
+    border: 1px solid #06193D;
+    ;
     border-radius: 7px;
     cursor: pointer;
+    box-shadow: inset 2px 2px 3px #689A94,
+                inset -2px -2px 3px #003933;
 }
 form .btn:focus {
-    box-shadow: 0 1px 1px 0 #C7C7C7 inset;
-	background: none repeat scroll 0 0 #E9E9E9;
+    box-shadow: 0 1px 1px 0 #003933 inset;
+    background: none repeat scroll 0 0 #689A94;
+    outline: none;
+}
+form .add {
+    margin-right: 5%;
+}
+form .clear {
+    width: 30%;
 }

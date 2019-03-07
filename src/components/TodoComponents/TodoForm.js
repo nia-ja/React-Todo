@@ -23,7 +23,8 @@ export class TodoForm extends React.Component {
             <form onSubmit={this.onSubmit}>
                 <input type='text' name="task" placeholder="Add todo" value={this.state.task} onChange={this.onChange} />
 
-                <button type='submit' className="btn">Add Task</button>
+                <button type='submit' className="btn add">Add Task</button>
+                <button type="button" value="clear" className="btn clear" onClick={this.props.clearCompleted}>Delete Completed</button>
             </form>
         )
     }

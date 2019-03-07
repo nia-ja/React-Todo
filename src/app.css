@@ -80,7 +80,6 @@ h1 {
     font-family: 'Roboto', sans-serif;
     color: #2D4571;
     background: rgba(248, 219, 167, .8);
-    /* border-radius: 50px; */
     background-image:
     radial-gradient(
       #689A94,
@@ -127,9 +126,11 @@ form .btn {
     box-shadow: inset 2px 2px 3px #689A94,
                 inset -2px -2px 3px #003933;
 }
+form .btn:hover {
+    box-shadow: inset 0px 1px 3px 2px rgba(0, 0, 0, 0.4);
+    outline: none;
+}
 form .btn:focus {
-    box-shadow: 0 1px 1px 0 #003933 inset;
-    background: none repeat scroll 0 0 #689A94;
     outline: none;
 }
 form .add {

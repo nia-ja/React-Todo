@@ -22,7 +22,7 @@ export class Todo extends React.Component {
             textDecoration: this.props.task.completed ? 'line-through' : 'none',
             color: this.props.task.completed ? '#D1AC69' : 'white',
             background: this.props.task.completed ? 'transparent' : '#41827B',
-            boxShadow: this.props.task.completed ? 'none' : '0 10px 6px -6px rgba(209, 172, 105, .8)',
+            boxShadow: this.props.task.completed ? 'none' : '0 10px 6px -6px rgb(104, 154, 148)',
         }
     }
     

@@ -12,9 +12,8 @@
     padding: 20px;
     background: #41827B;
     color: white;
-    box-shadow: 0 10px 6px -6px rgba(209, 172, 105, .8);
+    box-shadow: 0 10px 6px -6px rgb(104, 154, 148);
 }
-
 .todo-item p {
     font-size: 1.8rem;
     font-weight: 550;
